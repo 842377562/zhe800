@@ -130,6 +130,7 @@
   border: 0;
   vertical-align: middle;
   outline: none;
+  margin-top: 1px;
 }
 
 .header_input ._submit {
