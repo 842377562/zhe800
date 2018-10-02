@@ -1,7 +1,25 @@
-#banner{
-    width: 1200px;
-    margin: 0 auto;
+.banner_wrapper {
+  width: 1200px;
+  margin: 0 auto;
 }
-.banner_left{
-    height: 304px;
+.banner_left {
+  height: 304px;
+  border: 1px solid #e0e0e0;
+  ul {
+    width: 138px;
+    padding: 0 6px;
+  }
+  li {
+    display: block;
+    height: 29px;
+    width: 136px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  p {
+    line-height: 29px;margin-left: 30px;
+  }
+  a{
+      color: #333;
+  }
 }
