@@ -1,244 +1,247 @@
 // 顶部工具条
 .header_toolbar {
-    background: #fafafa;
+  background: #fafafa;
 }
 
 .toolbar_wrapper {
-    width: 1200px;
-    margin: 0 auto;
+  width: 1200px;
+  margin: 0 auto;
 
-    ul {
-        height: 29px;
-        float: right;
-    }
+  ul {
+    height: 29px;
+    float: right;
+  }
 }
 
 .toolbar_wrapper {
-    li {
-        float: left;
-        line-height: 29px;
-        font-size: $size_s;
-        margin-right: 20px;
+  li {
+    float: left;
+    line-height: 29px;
+    font-size: $size_s;
+    margin-right: 20px;
+    position: relative;
+    z-index: 999;
+
+    a {
+      color: #999;
+      height: 29px;
+      line-height: 29px;
+
+      &:hover {
+        color: #e02f2f;
+      }
+
+      img {
         position: relative;
-        z-index: 999;
+        top: 3px;
+      }
 
-        a {
-            color: #999;
-            height: 29px;
-            line-height: 29px;
+      b {
+        color: #cf201c;
+      }
 
-            &:hover {
-                color: #e02f2f
-            }
-
-            img {
-                position: relative;
-                top: 3px;
-            }
-
-            b {
-                color: #cf201c;
-            }
-
-            em {
-                background: url(//status.tuanimg.com/statics/zhe/common/img/index-common.png) 0 0 no-repeat;
-                display: inline-block;
-                width: 12px;
-                height: 16px;
-                position: relative;
-                top: 3px;
-                left: -2px;
-            }
-        }
-
-        &:nth-of-type(8) {
-            margin-right: 0;
-        }
-
-        i {
-            height: 12px;
-            width: 1px;
-            background: #e5e5e5;
-            display: inline-block;
-            margin-left: 20px;
-            position: relative;
-            top: 2px;
-
-        }
+      em {
+        background: url(//status.tuanimg.com/statics/zhe/common/img/index-common.png)
+          0 0 no-repeat;
+        display: inline-block;
+        width: 12px;
+        height: 16px;
+        position: relative;
+        top: 3px;
+        left: -2px;
+      }
     }
+
+    &:nth-of-type(8) {
+      margin-right: 0;
+    }
+
+    i {
+      height: 12px;
+      width: 1px;
+      background: #e5e5e5;
+      display: inline-block;
+      margin-left: 20px;
+      position: relative;
+      top: 2px;
+    }
+  }
 }
 
 // 二维码出现
 .code:hover .qc_code {
-    display: block;
+  display: block;
 }
 
 .qc_code {
-    height: 32px;
-    display: none;
-    width: 130px;
-    position: absolute;
-    left: -39px;
-    top: 0px;
-    background: #fff;
-    box-shadow: 5px 0px 5px -5px #d4d4d4, -5px 0px 5px -5px #d4d4d4;
+  height: 32px;
+  display: none;
+  width: 130px;
+  position: absolute;
+  left: -39px;
+  top: 0px;
+  background: #fff;
+  box-shadow: 5px 0px 5px -5px #d4d4d4, -5px 0px 5px -5px #d4d4d4;
 
-    .qc_code_img {
-        height: 138px;
-        width: 139px;
-        position: relative;
-        left: -1px;
-        z-index: -1;
-        box-shadow: 0 0 5px #d4d4d4;
-        border: 1px solid #e5e5e5;
-        box-sizing: border-box;
-        background: url(//status.tuanimg.com/statics/zhe/components/toolbar/img/big_bg_img_v3.png) center no-repeat #fff;
-    }
-
+  .qc_code_img {
+    height: 138px;
+    width: 139px;
+    position: relative;
+    left: -1px;
+    z-index: -1;
+    box-shadow: 0 0 5px #d4d4d4;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    background: url(//status.tuanimg.com/statics/zhe/components/toolbar/img/big_bg_img_v3.png)
+      center no-repeat #fff;
+  }
 }
 
 .color_red a {
-    color: #ec1611 !important;
+  color: #ec1611 !important;
 }
 
 //头部搜索框
 .header_wrapper {
-    width: 1200px;
-    margin: 0 auto;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .logo a {
-    width: 225px;
-    height: 55px;
-    background: url(//status.tuanimg.com/statics/zhe/common/img/logo_zhe800_new.png) center center no-repeat;
-    display: block;
-    margin-top: 22px;
+  width: 225px;
+  height: 55px;
+  background: url(//status.tuanimg.com/statics/zhe/common/img/logo_zhe800_new.png)
+    center center no-repeat;
+  display: block;
+  margin-top: 22px;
 }
 
 // 搜索框
 .header_input {
-    width: 545px;
-    height: 35px;
-    border: 2px solid #e60044;
-    border-right: 0;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-    position: relative;
-    margin: 30px 0 0 30px;
+  width: 545px;
+  height: 35px;
+  border: 2px solid #e60044;
+  border-right: 0;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  position: relative;
+  margin: 30px 0 0 30px;
 
-    ._input {
-        width: 375px;
-        height: 24px;
-        padding: 5px 0 5px 10px;
-        color: #999;
-        border: 0;
-        vertical-align: middle;
-        outline: none;
-        margin-top:1px;
-    }
+  ._input {
+    width: 375px;
+    height: 24px;
+    padding: 5px 0 5px 10px;
+    color: #999;
+    border: 0;
+    vertical-align: middle;
+    outline: none;
+    margin-top: 1px;
+  }
 
-    ._submit {
-        width: 48px;
-        height: 24px;
-        margin-top: 7px;
-        background: #fff url(//status.tuanimg.com/statics/zhe/common/img/index-common.png) -34px 0 no-repeat;
-        cursor: pointer;
-        outline: 0;
-    }
+  ._submit {
+    width: 48px;
+    height: 24px;
+    margin-top: 7px;
+    background: #fff
+      url(//status.tuanimg.com/statics/zhe/common/img/index-common.png) -34px 0 no-repeat;
+    cursor: pointer;
+    outline: 0;
+  }
 }
 
 .header_input_1 {
-    width: 94px;
-    height: 35px;
-    padding-right: 17px;
-    color: #fff;
-    font-size: 19px;
-    text-align: center;
-    line-height: 35px;
-    background: url(//status.tuanimg.com/statics/zhe/common/img/index-common.png) -34px -34px no-repeat;
+  width: 94px;
+  height: 35px;
+  padding-right: 17px;
+  color: #fff;
+  font-size: 19px;
+  text-align: center;
+  line-height: 35px;
+  background: url(//status.tuanimg.com/statics/zhe/common/img/index-common.png) -34px -34px
+    no-repeat;
 }
 
 .header_input_2 {
-    width: 15px;
-    height: 39px;
-    background: url(//status.tuanimg.com/statics/zhe/common/img/index-common.png) 0 -34px no-repeat;
-    position: absolute;
-    top: -2px;
-    right: -15px;
+  width: 15px;
+  height: 39px;
+  background: url(//status.tuanimg.com/statics/zhe/common/img/index-common.png)
+    0 -34px no-repeat;
+  position: absolute;
+  top: -2px;
+  right: -15px;
 }
 
 .header_top {
-    padding-bottom: 23px;
+  padding-bottom: 23px;
 
-    span {
-        margin-top: 30px;
-    }
+  span {
+    margin-top: 30px;
+  }
 }
 
 #header {
-    border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .header_nav {
-    width: 1100px;
-    margin: 0 auto;
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  left: -50px;
+
+  ul {
     position: relative;
-    left: -50px;
+  }
 
-    ul {
-        position: relative;
+  li {
+    float: left;
+
+    &:nth-of-type(1) a {
+      width: 150px;
+      background: #e60044;
+      color: #fff;
     }
 
-    li {
-        float: left;
-
-        &:nth-of-type(1) a {
-            width: 150px;
-            background: #e60044;
-            color: #fff;
-        }
-
-        &:hover a {
-            border-bottom: 2px solid #ec1611;
-            box-shadow: 10px 0 5px -5px #ddd, -10px 0 5px -5px #ddd;
-        }
+    &:hover a {
+      border-bottom: 2px solid #ec1611;
+      box-shadow: 10px 0 5px -5px #ddd, -10px 0 5px -5px #ddd;
     }
+  }
+
+  a {
+    display: block;
+    height: 40px;
+    width: 130px;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    color: #696969;
+    box-sizing: border-box;
+  }
+
+  // 导航广告
+  span {
+    display: block;
+    position: absolute;
+    right: -100px;
+    bottom: 0px;
 
     a {
-        display: block;
-        height: 40px;
-        width: 130px;
-        font-size: 16px;
-        line-height: 40px;
-        text-align: center;
-        color: #696969;
-        box-sizing: border-box;
-    }
+      background-image: url(https://z3.tuanimg.com/imagev2/site/126x34.31dcb164756e442506db73bd7457c8f7.gif);
+      height: 34px;
+      width: 126px;
 
-    // 导航广告
-    span {
-        display: block;
+      &:hover img {
+        display: block ;
+      }
+
+      img {
         position: absolute;
-        right: -100px;
-        bottom: 0px;
-
-        a {
-            background-image: url(https://z3.tuanimg.com/imagev2/site/126x34.31dcb164756e442506db73bd7457c8f7.gif);
-            height: 34px;
-            width: 126px;
-
-            &:hover img {
-                display: block;
-            }
-
-            img {
-                position: absolute;
-                top: 35px;
-                right: 0px;
-                display: none;
-            }
-        }
-
-
+        top: 35px;
+        right: 0px;
+        display: none;
+        z-index: 999;
+      }
     }
+  }
 }

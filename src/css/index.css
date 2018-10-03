@@ -235,21 +235,45 @@
   top: 35px;
   right: 0px;
   display: none;
+  z-index: 999;
 }
 
 .banner_wrapper {
   width: 1200px;
   margin: 0 auto;
+  height: 304px;
+  border: 1px solid #e5e5e5;
+  border-top: 0;
+  display: block;
 }
 
 .banner_left {
   height: 304px;
-  border: 1px solid #e0e0e0;
+  width: 148px;
 }
 
 .banner_left ul {
   width: 138px;
   padding: 0 6px;
+}
+
+.banner_left li:nth-of-type(9) p {
+  font-size: 12px;
+  margin-left: 0;
+}
+
+.banner_left li:nth-of-type(10) {
+  border-bottom: 0;
+}
+
+.banner_left li:nth-of-type(10) p {
+  font-size: 12px;
+  margin-left: 0;
+  padding-left: 5px;
+}
+
+.banner_left li:nth-of-type(10) p a {
+  padding-left: 7px;
 }
 
 .banner_left li {
@@ -263,9 +287,167 @@
 .banner_left p {
   line-height: 29px;
   margin-left: 30px;
+  color: black;
+}
+
+.banner_left a:hover {
+  color: #ff4545;
+  text-decoration: underline;
 }
 
 .banner_left a {
   color: #333;
+}
+
+.target {
+  background: url(//z5.tuanimg.com/v2/core/img/shouye_new_img.png) no-repeat -18px -559px !important;
+}
+
+.banner_inpic {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.banner_inpic img {
+  display: block;
+  height: 137px;
+  width: 137px;
+  margin-bottom: 10px;
+}
+
+.banner_content {
+  border-bottom: 1px solid #e0e0e0;
+  width: 951px;
+  height: 304px;
+  position: relative;
+}
+
+.banner_content li {
+  position: absolute;
+}
+
+.banner_content span {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  margin-left: -40px;
+  bottom: 20px;
+  z-index: 2;
+}
+
+.banner_content b {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: url(//z5.tuanimg.com/v2/core/img/shouye_new_img.png) no-repeat -34px -559px;
+  display: block;
+  float: left;
+  margin-left: 5px;
+}
+
+.banner_right {
+  height: 304px;
+  width: 98px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.banner_right div {
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.banner_right .banner_right1 {
+  height: 83px;
+  width: 80px;
+}
+
+.banner_right .banner_right1 p {
+  background: url(//status.tuanimg.com/statics/zhe/common/img/index-common.png) no-repeat;
+  background-position: -231px -34px;
+}
+
+.banner_right .banner_right2 {
+  height: 83px;
+  width: 80px;
+}
+
+.banner_right .banner_right2 p {
+  background: url(//status.tuanimg.com/statics/zhe/common/img/index-common.png) no-repeat;
+  background-position: -231px -82px;
+}
+
+.banner_right .banner_right3 {
+  height: 125px;
+  width: 80px;
+}
+
+.banner_right .banner_right3 img {
+  height: 60px;
+  width: 60px;
+  margin: 0 auto;
+  display: block;
+}
+
+.banner_right .banner_right3 img span {
+  font: 12px/15px "microsoft yahei";
+  margin-top: 6px;
+}
+
+.banner_right a {
+  display: block;
+}
+
+.banner_right p {
+  height: 40px;
+  width: 40px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+
+.banner_right span {
+  line-height: 36px;
+  color: #ff404c;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+#brand {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 31px;
+}
+
+.brand_top {
+  height: 40px;
+  border-bottom: 1px solid #ff404c;
+}
+
+.brand_top_left span {
+  height: 31px;
+  width: 140px;
+  display: inline-block;
+  background: url(../images/brand.png) no-repeat;
+  margin-left: 13px;
+}
+
+.brand_top_left i {
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: #ff404c;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.brand_top_left a {
+  color: #666;
+  display: inline-block;
+  margin-bottom: 19px;
+  vertical-align: middle;
 }
 /*# sourceMappingURL=index.css.map */

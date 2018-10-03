@@ -1,13 +1,35 @@
 .banner_wrapper {
   width: 1200px;
   margin: 0 auto;
+  height: 304px;
+  border: 1px solid #e5e5e5;
+  border-top: 0;
+  display: block;
 }
 .banner_left {
   height: 304px;
-  border: 1px solid #e0e0e0;
+  width: 148px;
   ul {
     width: 138px;
     padding: 0 6px;
+  }
+
+  li:nth-of-type(9) {
+    p {
+      font-size: $size_s;
+      margin-left: 0;
+    }
+  }
+  li:nth-of-type(10) {
+    border-bottom: 0;
+    p {
+      font-size: $size_s;
+      margin-left: 0;
+      padding-left: 5px;
+      a {
+        padding-left: 7px;
+      }
+    }
   }
   li {
     display: block;
@@ -17,9 +39,119 @@
     border-bottom: 1px solid #e0e0e0;
   }
   p {
-    line-height: 29px;margin-left: 30px;
+    line-height: 29px;
+    margin-left: 30px;
+    color: black;
   }
-  a{
-      color: #333;
+  a:hover {
+    color: #ff4545;
+    text-decoration: underline;
+  }
+  a {
+    color: #333;
+  }
+}
+// banner圆点样式
+.target {
+  background: url(//z5.tuanimg.com/v2/core/img/shouye_new_img.png) no-repeat -18px -559px !important;
+}
+// banner里面右边的2张小图片
+.banner_inpic {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+
+  img {
+    display: block;
+    height: 137px;
+    width: 137px;
+    margin-bottom: 10px;
+  }
+}
+//大banner
+.banner_content {
+  border-bottom: 1px solid #e0e0e0;
+  width: 951px;
+  height: 304px;
+  position: relative;
+  li {
+    position: absolute;
+  }
+
+  span {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    margin-left: -40px;
+    bottom: 20px;
+    z-index: 2;
+  }
+  b {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: url(//z5.tuanimg.com/v2/core/img/shouye_new_img.png) no-repeat -34px -559px;
+    display: block;
+    float: left;
+    margin-left: 5px;
+  }
+}
+.banner_right {
+  height: 304px;
+  width: 98px;
+  box-sizing: border-box;
+  div {
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+  .banner_right1 {
+    height: 83px;
+    width: 80px;
+    p {
+      background: url(//status.tuanimg.com/statics/zhe/common/img/index-common.png)
+        no-repeat;
+      background-position: -231px -34px;
+    }
+  }
+  .banner_right2 {
+    height: 83px;
+    width: 80px;
+    p {
+      background: url(//status.tuanimg.com/statics/zhe/common/img/index-common.png)
+        no-repeat;
+
+      background-position: -231px -82px;
+    }
+  }
+  .banner_right3 {
+    height: 125px;
+    width: 80px;
+    img {
+      height: 60px;
+      width: 60px;
+      margin: 0 auto;
+      display: block;
+      span {
+        font: 12px/15px "microsoft yahei";
+        margin-top: 6px;
+      }
+    }
+  }
+  a {
+    display: block;
+  }
+  p {
+    height: 40px;
+    width: 40px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 25px;
+  }
+  span {
+    line-height: 36px;
+    color: #ff404c;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
   }
 }
