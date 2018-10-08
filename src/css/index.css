@@ -416,9 +416,213 @@
   text-align: center;
 }
 
+.footer_wrapper {
+  border-top: 3px solid #ec1611;
+}
+
+.footer_wrapper ul {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer_wrapper li {
+  float: left;
+  width: 140px;
+  height: 270px;
+  text-align: left;
+  line-height: 24px;
+  padding-top: 28px;
+  padding-left: 60px;
+}
+
+.footer_wrapper li:nth-of-type(1) {
+  padding-left: 0;
+}
+
+.footer_wrapper li span {
+  display: block;
+  font: 16px/30px "微软雅黑";
+  color: #333;
+}
+
+.footer_wrapper li span:nth-of-type(1) {
+  background: url(//status.tuanimg.com/statics/zhe/common/img/foot_icon.png) no-repeat;
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.footer_wrapper li a {
+  display: block;
+  color: #999;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 24px;
+  width: 85px;
+  font-size: 12px;
+}
+
+.hehe {
+  font-size: 12px !important;
+  color: #999 !important;
+  text-align: 24px !important;
+}
+
+.hehe a {
+  display: initial !important;
+  color: #ec1611 !important;
+}
+
+.hehe a:hover {
+  text-decoration: underline;
+}
+
+.txt {
+  height: 21px;
+  line-height: 21px;
+  width: 98px;
+  padding-left: 5px;
+  color: #ccc;
+  border: 1px solid #eaeaea;
+  vertical-align: middle;
+  font-size: 12px;
+  padding: 1px 6px;
+}
+
+.sub {
+  height: 25px;
+  line-height: 25px;
+  width: 42px;
+  cursor: pointer;
+  color: #999;
+  border-left: 0;
+  border: 1px solid #eaeaea;
+  vertical-align: middle;
+  background: #fafafa no-repeat;
+  font-size: 12px;
+  padding: 1px 6px;
+}
+
+.li_2 span {
+  background-position: -95px 0 !important;
+}
+
+.li_3 span {
+  background-position: 0 -95px !important;
+}
+
+.li_4 span {
+  background-position: -190px 0 !important;
+}
+
+.li_5 span {
+  background-position: -95px -95px !important;
+}
+
+#li_6 span:nth-of-type(1) {
+  margin-top: 6px;
+  width: 104px;
+  height: 220px;
+  margin: 0 auto;
+  background: url(//status.tuanimg.com/statics/zhe/common/img/footer_code.png) 0 0 no-repeat;
+}
+
+#li_6 span {
+  font: 14px/30px "微软雅黑";
+  color: #666;
+  text-align: center;
+  display: block;
+}
+
+.friend_url {
+  width: 750px;
+  padding-top: 40px;
+  margin: 0 auto;
+}
+
+.friend_url p {
+  font-size: 12px;
+  line-height: 20px;
+  color: #999;
+}
+
+.friend_url a {
+  display: inline-block;
+  color: #999;
+  font-size: 12px;
+}
+
+.end {
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 10px 0 0px 0;
+}
+
+.end p {
+  text-align: center;
+  font: 12px/30px '微软雅黑';
+  color: #999;
+}
+
+.end span {
+  font: 12px/30px '微软雅黑';
+  color: #999;
+}
+
+.end a {
+  color: #999;
+}
+
+.end a:hover {
+  text-decoration: underline;
+}
+
+.end_bg {
+  height: 28px;
+  width: 330px;
+  margin-top: 7px;
+  margin: 0 auto;
+  padding: 10px 0 30px 0;
+}
+
+.end_bg a {
+  margin-right: 10px;
+}
+
+.end_bg .a1 {
+  background: url(//status.tuanimg.com/statics/zhe/subject/img/logo.jpg) no-repeat;
+  width: 30px;
+  height: 28px;
+  background-size: 30px 28px;
+  display: block;
+  float: left;
+}
+
+.end_bg .a2 {
+  background: url(//status.tuanimg.com/statics/zhe/common/img/cert.png);
+  background-size: contain;
+  height: 26px;
+  width: 70px;
+  display: block;
+  float: left;
+}
+
+.end_bg .a3 {
+  background: url(//status.tuanimg.com/statics/zhe/common/img/gsrz-icon.jpg);
+  display: block;
+  height: 28px;
+  width: 28px;
+  background-size: contain;
+  float: left;
+}
+
 .brand_top, .flashsale_top, .hotpush_top, .update_top {
   height: 40px;
   width: 1200px;
+  margin: 0 auto;
   border-bottom: 1px solid #ff404c;
   overflow: hidden;
 }
@@ -550,7 +754,9 @@
 
 #flashsale {
   width: 1200px;
+  height: 299px;
   margin: 0 auto;
+  border-bottom: 1px solid #eaeaea;
 }
 
 #flashsale b {
@@ -658,17 +864,228 @@
   right: 0;
 }
 
-#update {
-  background: #f2f2f2;
+#hotpush {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 34px;
+}
+
+.hotpush_top em {
+  font-size: 12px;
+  color: #666;
+  position: relative;
+  bottom: 8px;
+  margin-left: 3px;
+}
+
+.hotpush_top span {
+  background: url(../images/hotpush.png);
+}
+
+.hotpush li {
+  float: left;
+  margin-right: 10px;
+}
+
+.hotpush li:nth-of-type(5) {
+  margin-right: 0px;
 }
 
 .update_top {
   width: 1200px;
   margin: 0 auto;
+  margin-top: 31px;
+}
+
+.update_top span {
+  width: 160px;
+  background: url(../images/updata.png) no-repeat;
+}
+
+.update_top b {
+  margin-top: 15px;
+}
+
+.update_top b em {
+  color: #ccc;
+  font-weight: 400;
+  display: inline-block;
+  width: 5px;
+  font-size: 12px;
+  position: relative;
+  bottom: 9px;
+  left: 2px;
+}
+
+.update_top b a {
+  display: inline-block;
+  padding: 6px 10px !important;
+}
+
+.update_top b a:hover {
+  color: #ff404c;
+  text-decoration: underline;
+}
+
+.update_bg {
+  background: #f2f2f2;
 }
 
 .update_content {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.update_content div {
+  width: 283px;
+  height: 345px;
+  background: #fff;
+  float: left;
+  margin: 0 3px 30px 20px;
+  position: relative;
+}
+
+.update_content div:hover {
+  -webkit-box-shadow: 5px 0 10px #ddd, -5px 0 10px #ddd;
+          box-shadow: 5px 0 10px #ddd, -5px 0 10px #ddd;
+}
+
+.update_content div img {
+  height: 283px;
+  width: 283px;
+}
+
+.update_content div span {
+  padding: 0 10px;
+  overflow: hidden;
+  display: block;
+}
+
+.update_content div span a {
+  width: 195px;
+  display: inline-block;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.update_content div span a:hover {
+  text-decoration: underline;
+}
+
+.update_content div span em {
+  display: inline-block;
+  float: right;
+  color: #666;
+  line-height: 30px;
+}
+
+.update_content div b {
+  font-size: 16px;
+  color: #ec1611;
+  display: inline-block;
+  width: 194px;
+  height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 30px;
+  margin-left: 10px;
+}
+
+.update_content div i {
+  display: inline-block;
+  color: #999;
+  font-size: 12px;
+  font-style: normal;
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  background: url(//z6.tuanimg.com/v3/src/img/common/big_bg_img_v3.png) no-repeat -493px -64px;
+  padding-left: 18px;
+  cursor: pointer;
+}
+
+.update_content div i:hover {
+  background: url(//z5.tuanimg.com/v2/core/img/favorite_icon.png) 0 -3px no-repeat;
+  color: #ec1611;
+}
+
+.page {
   width: 1200px;
   margin: 0 auto;
+  text-align: center;
+  padding: 20px 0 28px 0;
+  margin-bottom: 22px;
+}
+
+.list_page {
+  display: inline-block;
+  width: 430px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.list_page span {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.list_page span:nth-of-type(1) {
+  background: url(//status.tuanimg.com/statics/zhe/common/img/prev_nextpng.png) -46px -32px;
+}
+
+.list_page span:nth-of-type(2) {
+  color: #ff404c;
+}
+
+.list_page span:nth-of-type(8) {
+  background: url(//status.tuanimg.com/statics/zhe/common/img/prev_nextpng.png) -46px 0;
+}
+
+.bottom_img {
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.bottom_img li {
+  float: left;
+  width: 232px;
+  height: 159px;
+  margin-right: 10px;
+}
+
+.bottom_img li:nth-of-type(5) {
+  margin-right: 0;
+}
+
+.bottom_img li:hover {
+  -webkit-box-shadow: 0 0 30px 1px #999;
+          box-shadow: 0 0 30px 1px #999;
+  -webkit-transition: -webkit-box-shadow 0.8s;
+  transition: -webkit-box-shadow 0.8s;
+  transition: box-shadow 0.8s;
+  transition: box-shadow 0.8s, -webkit-box-shadow 0.8s;
+}
+
+#right_box {
+  height: 100%;
+  width: 34px;
+  background: black;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999999;
+  color: #fff;
 }
 /*# sourceMappingURL=index.css.map */

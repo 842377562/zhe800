@@ -1,0 +1,222 @@
+.footer_wrapper {
+    border-top: 3px solid #ec1611;
+
+
+    ul {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    li {
+        float: left;
+        width: 140px;
+        height: 270px;
+        text-align: left;
+        line-height: 24px;
+        padding-top: 28px;
+        padding-left: 60px;
+
+        &:nth-of-type(1) {
+            padding-left: 0;
+        }
+
+        span {
+            display: block;
+            font: 16px/30px "微软雅黑";
+            color: #333;
+        }
+
+        span:nth-of-type(1) {
+            background: url(//status.tuanimg.com/statics/zhe/common/img/foot_icon.png) no-repeat;
+            width: 80px;
+            height: 80px;
+            display: block;
+            margin-bottom: 14px;
+        }
+
+
+
+
+        a {
+            display: block;
+            color: #999;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            height: 24px;
+            width: 85px;
+            font-size: $size_s;
+        }
+
+        h3 {}
+    }
+}
+
+.hehe {
+    font-size: $size_s !important;
+    color: #999 !important;
+    text-align: 24px !important;
+
+    a {
+        display: initial !important;
+        color: #ec1611 !important;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.txt {
+    height: 21px;
+    line-height: 21px;
+    width: 98px;
+    padding-left: 5px;
+    color: #ccc;
+    border: 1px solid #eaeaea;
+    vertical-align: middle;
+    font-size: $size_s;
+    padding: 1px 6px;
+}
+
+.sub {
+    height: 25px;
+    line-height: 25px;
+    width: 42px;
+    cursor: pointer;
+    color: #999;
+    border-left: 0;
+    border: 1px solid #eaeaea;
+    vertical-align: middle;
+
+    background: #fafafa no-repeat;
+    font-size: 12px;
+    padding: 1px 6px;
+}
+
+.li_2 {
+    span {
+        background-position: -95px 0 !important;
+    }
+}
+
+.li_3 {
+    span {
+        background-position: 0 -95px !important;
+    }
+}
+
+.li_4 {
+    span {
+        background-position: -190px 0 !important;
+    }
+}
+
+.li_5 {
+    span {
+        background-position: -95px -95px !important;
+    }
+}
+
+#li_6 {
+    span:nth-of-type(1) {
+        margin-top: 6px;
+        width: 104px;
+        height: 220px;
+        margin: 0 auto;
+        background: url(//status.tuanimg.com/statics/zhe/common/img/footer_code.png) 0 0 no-repeat;
+    }
+
+    span {
+        font: 14px/30px "微软雅黑";
+        color: #666;
+        text-align: center;
+        display: block;
+    }
+
+
+}
+
+.friend_url {
+    width: 750px;
+    padding-top: 40px;
+    margin: 0 auto;
+
+    p {
+        font-size: $size_s;
+        line-height: 20px;
+        color: #999;
+
+    }
+
+    a {
+        display: inline-block;
+        color: #999;
+        font-size: $size_s;
+
+    }
+}
+
+.end {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 10px 0 0px 0;
+
+    p {
+        text-align: center;
+        font: 12px/30px '微软雅黑';
+        color: #999;
+    }
+
+    span {
+        font: 12px/30px '微软雅黑';
+        color: #999;
+    }
+
+    a {
+        color: #999;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.end_bg {
+    height: 28px;
+    width: 330px;
+    margin-top: 7px;
+    margin: 0 auto;
+    padding: 10px 0 30px 0;
+a{
+    margin-right: 10px;
+}
+    .a1 {
+        background: url(//status.tuanimg.com/statics/zhe/subject/img/logo.jpg) no-repeat;
+        width: 30px;
+        height: 28px;
+        background-size: 30px 28px;
+        display: block;
+        float: left;
+    }
+
+    .a2 {
+        background: url(//status.tuanimg.com/statics/zhe/common/img/cert.png);
+        background-size: contain;
+        
+        height: 26px;
+        width: 70px;
+        display: block;
+        float: left;
+    }
+
+    .a3 {
+        background: url(//status.tuanimg.com/statics/zhe/common/img/gsrz-icon.jpg);
+        display: block;
+        height: 28px;
+        width: 28px;
+        background-size: contain;
+        float: left;
+    }
+}

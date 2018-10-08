@@ -1,0 +1,42 @@
+body {
+  background: #f6f6f6;
+}
+
+header {
+  width: 980px;
+  margin: 0 auto;
+  padding: 20px 0 10px;
+  overflow: hidden;
+}
+
+header .logo {
+  display: inline-block;
+  width: 232px;
+  height: 57px;
+  float: left;
+  background: url(../images/logo20172x.jpg);
+}
+
+header span {
+  float: right;
+  margin: 35px 0 0;
+  font-size: 12px;
+  color: #666;
+}
+
+header span a {
+  color: #428bca;
+  text-decoration: none;
+}
+
+header span a:hover {
+  text-decoration: underline;
+}
+
+.register {
+  background: #fff;
+  padding: 40px 60px;
+  width: 860px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=registor.css.map */

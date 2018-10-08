@@ -1,0 +1,27 @@
+#hotpush{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 34px;
+}
+.hotpush_top{
+    em{
+        font-size:$size_s;
+        color: #666; 
+        
+    position: relative;
+    bottom: 8px;
+    margin-left: 3px
+    }
+    span{
+        background: url(../images/hotpush.png);
+    }
+}
+.hotpush{
+    li{
+        float: left;
+        margin-right: 10px;
+        &:nth-of-type(5){
+            margin-right: 0px;
+        }
+    }
+}

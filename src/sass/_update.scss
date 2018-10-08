@@ -1,11 +1,166 @@
-#update {
-  background: #f2f2f2;
-}
 .update_top {
   width: 1200px;
   margin: 0 auto;
+  margin-top: 31px;
+
+  span {
+    width: 160px;
+    background: url(../images/updata.png) no-repeat;
+
+  }
+
+  b {
+    margin-top: 15px;
+
+    em {
+      color: #ccc;
+      font-weight: 400;
+      display: inline-block;
+      width: 5px;
+      font-size: 12px;
+      position: relative;
+      bottom: 9px;
+      left: 2px;
+    }
+
+    a {
+      display: inline-block;
+      padding: 6px 10px !important;
+
+      &:hover {
+        color: #ff404c;
+        text-decoration: underline;
+      }
+    }
+  }
 }
+
+.update_bg {
+  background: #f2f2f2;
+}
+
 .update_content {
+  width: 1240px;
+  margin: 0 auto;
+
+  div {
+    width: 283px;
+    height: 345px;
+    background: #fff;
+    float: left;
+    margin: 0 3px 30px 20px;
+    position: relative;
+    &:hover{
+    box-shadow: 5px 0 10px #ddd, -5px 0 10px #ddd;
+    }
+
+    img {
+      height: 283px;
+      width: 283px;
+    }
+
+    span {
+      padding: 0 10px;
+      overflow: hidden;
+      display: block;
+      a {
+        width: 195px;
+        display: inline-block;
+        color: #666;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        line-height: 30px;
+        font-size: $size_s;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+      em{
+        display: inline-block;
+        float: right;
+        color: #666;
+        line-height: 30px;
+
+
+      }
+    }
+    b{
+      font-size: 16px;
+      color: #ec1611;
+      display: inline-block;
+      width: 194px;
+      height: 30px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      line-height: 30px;
+      margin-left: 10px;
+    }
+    i{
+      display: inline-block;
+      color: #999;
+      font-size: $size_s;
+      font-style: normal;
+      position: absolute;
+      bottom: 8px;
+      right: 10px;
+      background: url(//z6.tuanimg.com/v3/src/img/common/big_bg_img_v3.png) no-repeat -493px -64px;
+      padding-left: 18px;
+      cursor: pointer;
+      &:hover{
+        background: url(//z5.tuanimg.com/v2/core/img/favorite_icon.png) 0 -3px no-repeat;
+    color: #ec1611;
+      }
+    }
+  }
+}
+.page{
   width: 1200px;
   margin: 0 auto;
+  text-align: center;
+  padding: 20px 0 28px 0;
+  margin-bottom: 22px;
+}
+.list_page{
+  display: inline-block;
+  width: 430px;
+  height: 50px;
+  margin: 0 auto;
+  span{
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    &:nth-of-type(1){
+      background: url(//status.tuanimg.com/statics/zhe/common/img/prev_nextpng.png) -46px -32px;
+    }
+    &:nth-of-type(2){
+      color:#ff404c;
+    }
+    &:nth-of-type(8){background: url(//status.tuanimg.com/statics/zhe/common/img/prev_nextpng.png) -46px 0;
+    }
+  }
+}
+.bottom_img{
+  width: 1200px;
+  margin: 0 auto;
+  li{
+    float: left;
+    width: 232px;
+    height: 159px;
+    margin-right: 10px;
+    &:nth-of-type(5){
+      margin-right: 0;
+    }
+    &:hover{
+      box-shadow: 0 0 30px 1px #999;
+      transition: box-shadow 0.8s;
+    }
+  }
+  padding-bottom: 100px;
 }
