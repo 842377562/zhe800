@@ -23,6 +23,7 @@ STHeiTi, sans-serif;
 a {
 text-decoration: none;
 }
+b{font-weight: normal;}
 h1, h2, h3, h4, h5, h6{ font-weight: normal;}
 address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
 

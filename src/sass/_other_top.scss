@@ -1,0 +1,37 @@
+.brand_top,.flashsale_top,.hotpush_top,.update_top{
+        height: 40px;
+        width: 1200px;
+        border-bottom: 1px solid #ff404c;
+        overflow: hidden;
+   
+        .last{
+            color: #fff !important;
+            background: #ff404c;
+            padding: 1px 10px;
+            margin-right: -1px !important;
+            &:hover{color: #fff !important;};
+        }
+        .color{color: #ff404c !important;}
+        span{
+            height: 31px;
+            width: 140px;
+            display:inline-block;
+            background:url(../images/brand.png) no-repeat; 
+            margin-left: 13px;
+        }
+        i{
+            width: 6px;
+            height: 6px;
+            border-radius: 6px;
+            background-color: #ff404c;
+            display: inline-block;
+            margin-bottom: 10px;
+            margin-left: 5px;
+        }
+        a{
+            color: #666;
+            display: inline-block;
+            margin-bottom: 19px;
+            vertical-align: middle;
+        }
+    }

@@ -1,0 +1,94 @@
+#flashsale {
+  width: 1200px;
+  margin: 0 auto;
+
+  b {
+    display: block;
+
+    a {
+      margin-top: 12px;
+      font-size: $size_s;
+      display: block;
+      float: left;
+      height: 28px;
+      padding: 0 8px;
+      line-height: 28px;
+      &:hover {
+        background: #ff404c;
+        color: #fff;
+      }
+    }
+  }
+}
+.flashsale_top {
+  span{
+    background: url(../images/flashsale.png);
+  }
+  em {
+    color: #666;
+    display: inline-block;
+    margin-bottom: 19px;
+    vertical-align: middle;
+  }
+}
+.flashsale_content {
+  position: relative;
+  ul {
+    width: 33901px;
+  }
+  li:hover{
+    box-shadow: 0 0 30px 1px #999;
+  }
+  li {
+    float: left;
+    width: 185px;
+    height: 250px;
+    margin-right: 18px;
+    transition: box-shadow 0.8s;
+    img {
+      width: 100%;
+    }
+    span {
+      color: #ec1611;
+      font: 13px/33px "微软雅黑";
+      float: left;
+      text-align: right;
+      margin-left: 10px;
+      display: block;
+      em {
+        font: 700 16px/33px Arial;
+        margin-left: 4px;
+      }
+    }
+    p{
+font-size: $size_s;
+line-height: 20px;
+width: 175px;
+text-align: left;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+color: #666;
+margin:6px 10px 0 10px;
+
+    }
+  }
+  .btnleft,
+  .btnright {
+    width: 17px;
+    height: 43px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 3;
+    background-image: url(//z6.tuanimg.com/v3/src/img/common/big_bg_img_v3.png);
+    top: 71px;
+  }
+  .btnleft {
+    background-position: -277px -440px;
+    left: 0;
+  }
+  .btnright {
+    background-position: -307px -440px;
+    right: 0;
+  }
+}
