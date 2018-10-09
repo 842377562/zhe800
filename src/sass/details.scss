@@ -1,0 +1,317 @@
+$size_s: 12px;
+@import "header";
+body {
+  height: 2000px;
+}
+.top {
+  width: 1200px;
+  height: 38px;
+  line-height: 38px;
+  margin: 0 auto;
+  font-size: 12px;
+  font-family: "\5B8B\4F53";
+  color: #666;
+  a {
+    color: #666;
+    text-decoration: none;
+  }
+}
+.detail {
+  width: 1200px;
+  height: 520px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+.detail_left {
+  width: 402px;
+  position: relative;
+  float: left;
+  display: inline;
+  em {
+    width: 50px;
+    height: 48px;
+    padding-right: 6px;
+    background: url(//i4.tuanimg.com/shop/asset/item_d/deal_img/deal_y5.c017c371.png)
+      no-repeat -789px -5px;
+    position: absolute;
+    left: 0;
+    top: -5px;
+    z-index: 1;
+    font-size: 12px;
+  }
+  .pic {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 1px solid #e5e5e5;
+    font-size: 0;
+    line-height: 400px;
+    overflow: hidden;
+    background: url(//i4.tuanimg.com/shop/asset/item_d/loading400x400.81829cce.gif)
+      no-repeat center center;
+    img {
+      display: inline;
+      vertical-align: middle;
+      height: 400px;
+      width: 400px;
+    }
+  }
+  ul {
+    width: 408px;
+    float: left;
+    margin-top: 16px;
+    li {
+      width: 58px;
+      margin-right: 8px;
+      height: 58px;
+      float: left;
+      border: 1px solid #e5e5e5;
+      overflow: hidden;
+      font-size: 0;
+      line-height: 58px;
+    }
+  }
+}
+.bot {
+  width: 400px;
+  float: left;
+  margin-top: 20px;
+  text-align: left;
+  div {
+    float: left;
+    margin-right: 20px;
+    line-height: 16px;
+    padding-bottom: 6px;
+    font-size: 12px;
+    color: #666;
+    a {
+      color: #666;
+      &:hover {
+        color: #e02f0f;
+      }
+    }
+    i {
+      background: url(//i4.tuanimg.com/shop/asset/item_d/p_Spirit1-3.95484520.png)
+        no-repeat;
+      width: 16px;
+      height: 14px;
+      overflow: hidden;
+      float: left;
+    }
+  }
+}
+.sc {
+  i {
+    background-position: 0 -192px !important;
+    vertical-align: middle;
+  }
+  &:hover i {
+    background-position: -16px -192px !important;
+  }
+}
+.fx {
+  position: relative;
+  cursor: pointer;
+  &:hover ol {
+    display: block;
+  }
+  &:hover p i {
+    background-position: -48px -192px !important;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+    &:hover {
+      color: #e02f0f;
+    }
+
+    i {
+      background-position: -32px -192px !important;
+    }
+  }
+
+  ol {
+    display: none;
+    border: 1px solid #ccc;
+    width: 90px;
+    position: absolute;
+    top: 16px;
+    left: 0;
+    background: #fff;
+    padding: 10px 0 5px;
+
+    li {
+      margin-bottom: 5px;
+      overflow: hidden;
+      line-height: 20px;
+      width: 90px;
+      height: 20px;
+    }
+    i {
+      width: 20px;
+      height: 20px;
+      margin: 0 5px;
+    }
+  }
+}
+.jb {
+  &:hover i {
+    background-position: -80px -192px !important;
+  }
+  i {
+    background-position: -64px -192px !important;
+  }
+}
+.weibo {
+  background-position: -60px -207px !important;
+}
+.tx {
+  background-position: -80px -207px !important;
+}
+.renren {
+  background-position: -40px -207px !important;
+}
+.qzone {
+  background-position: -20px -207px !important;
+}
+
+//店铺信息
+.shop {
+  float: right;
+  width: 198px;
+  height: 480px;
+  line-height: 20px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  h4 {
+    line-height: 20px;
+    padding: 19px 15px 0;
+    position: relative;
+    b {
+      border-bottom: 1px dotted #e5e5e5;
+      padding-bottom: 8px;
+      width: 168px;
+      display: inline-block;
+      line-height: 20px;
+      color: #333;
+      font-weight: 700;
+      font-size: 12px;
+    }
+    a {
+      width: 120px;
+      display: inline-block;
+      color: #666;
+      line-height: 20px;
+    }
+  }
+  ol {
+    padding: 5px 14px;
+    li {
+      text-align: left;
+      line-height: 42px;
+      color: #666;
+      a {
+        color: #666;
+        font-size: 12px;
+      }
+    }
+  }
+  .em1 {
+    background-position: 0 -48px;
+    width: 48px;
+    background: url(//i4.tuanimg.com/shop/asset/item_d/icon/icon_level_new2.ddb32b36.png)
+      repeat-x 0 -48px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 24px;
+  }
+  .em2 {
+    position: relative;
+    display: inline-block;
+    z-index: 999;
+    i {
+      float: none;
+      display: inline-block;
+      position: relative;
+      top: 4px;
+      width: 20px;
+      height: 20px;
+      background: url(//i4.tuanimg.com/shop/asset/item_d/products/new1.ccb9914b.png)
+        no-repeat;
+      float: left;
+      margin-right: 8px;
+      font: 0/0 "";
+    }
+    .i1 {
+      background-position: 0 -40px;
+    }
+    .i2 {
+      background-position: -20px -40px;
+    }
+    .i3 {
+      background-position: -40px -40px;
+    }
+  }
+}
+.describe {
+  a {
+    color: #666;
+    font-size: 12px;
+  }
+  dl {
+    padding-top: 12px;
+    border-top: 1px dotted #e5e5e5;
+    margin: 0 15px;
+    dd {
+      height: 42px;
+      line-height: 42px;
+      em {
+        color: #ff404c;
+        display: inline-block;
+      }
+    }
+  }
+  label {
+    width: 84px;
+    display: inline-block;
+  }
+}
+.into {
+  text-align: center;
+  margin-top: 20px;
+  a {
+    text-decoration: none;
+    color: #ff404c;
+    display: inline-block;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #ff404c;
+    width: 68px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    margin: 0 2px;
+    border-radius: 2px;
+  }
+}
+.detail_right{
+    width: 745px;
+    text-align: left;
+    margin-left: 53px;
+}
+.content_top {
+  width: 549px;
+  margin-left: -18px;
+  float: left;
+  h1 {
+    font: 700 16px/24px "\5FAE\8F6F\96C5\9ED1";
+    color: #333;
+    margin: -3px 0 1px 0;
+    position: relative;
+  }
+  h3{
+    color: #e99494;
+    font: 12px/20px "\5FAE\8F6F\96C5\9ED1";
+  }
+}
