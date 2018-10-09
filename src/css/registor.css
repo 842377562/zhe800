@@ -61,7 +61,7 @@ header span a:hover {
   position: relative;
   width: 356px;
   color: #666;
-  font: 12px '';
+  font: 12px "";
 }
 
 .inp input {
@@ -96,5 +96,189 @@ header span a:hover {
   text-align: center;
   margin-left: 10px;
   cursor: pointer;
+}
+
+.slide {
+  width: 300px;
+  height: 34px;
+  background: #e8e8e8;
+  position: relative;
+  margin: 15px 0 15px 73px;
+}
+
+.agree {
+  padding: 15px 0 15px 74px;
+  position: relative;
+  width: 356px;
+}
+
+.agree p {
+  color: #666;
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
+.agree p a {
+  color: #666;
+  text-decoration: none;
+}
+
+.agree p a:hover {
+  text-decoration: underline;
+}
+
+.red_submit {
+  padding: 15px 0 15px 74px;
+  position: relative;
+  width: 356px;
+}
+
+.red_submit a {
+  border-top: 1px solid #e93a3a;
+  border-bottom: 1px solid #e93a3a;
+  display: inline-block;
+  text-align: center;
+  margin-top: 1px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.red_submit i {
+  font-size: 14px;
+  border-left: 1px solid #e93a3a;
+  border-right: 1px solid #e93a3a;
+  margin: 0 -1px;
+  display: block;
+  font-style: normal;
+  color: #fff;
+  background: #ff3b37;
+  text-decoration: none;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  text-align: center;
+  width: 178px;
+}
+
+.reg_right {
+  width: 430px;
+}
+
+.reg_right h3 {
+  position: relative;
+  margin: 40px 0 -7px 138px;
+  float: left;
+  display: inline;
+  background: #fff;
+  padding: 0 5px;
+  z-index: 11;
+  font-size: 12px;
+  font-weight: normal;
+  color: #666;
+}
+
+.morelogo {
+  width: 395px;
+  height: 100px;
+  overflow: hidden;
+  float: left;
+  position: relative;
+  border-top: 1px solid #ebebeb;
+  padding: 20px 0 20px 35px;
+  text-align: left;
+}
+
+.morelogo a {
+  width: 108px;
+  float: left;
+  border-color: #d5d5d5;
+  text-align: left;
+  text-indent: 35px;
+  margin: 10px 0 0 16px;
+  border: 1px solid #d5d5d5;
+  display: inline-block;
+  height: 30px;
+  color: #333;
+  text-decoration: none;
+}
+
+.morelogo a i {
+  text-align: left;
+  text-indent: 35px;
+  position: relative;
+  font-size: 14px;
+  margin: 0 -1px;
+  line-height: 30px;
+  font-style: normal;
+  color: #666;
+}
+
+.morelogo span {
+  width: 35px;
+  height: 17px;
+  float: left;
+  margin: 20px 0 0 16px;
+  display: inline-block;
+  background: url(../images/j.png) 35px -16px no-repeat;
+  cursor: pointer;
+  padding: 0 10px;
+  font-size: 12px;
+  color: #666;
+}
+
+.more {
+  width: 395px;
+}
+
+.a1 {
+  background: #f6f6f6 url(../images/ico2.png) no-repeat 0 -2px;
+}
+
+.a2 {
+  background: #f6f6f6 url(../images/ico2.png) no-repeat 0 -36px;
+}
+
+.a3 {
+  background: #f6f6f6 url(../images/ico2.png) no-repeat 0 -107px;
+}
+
+.a4 {
+  background: #f6f6f6 url(../images/ico2.png) no-repeat 0 -142px;
+}
+
+.footer {
+  color: #999;
+  line-height: 22px;
+  padding: 30px 0;
+  font-family: arial;
+}
+
+.footer .wrapper {
+  width: 980px;
+  margin: 0 auto;
+  font-size: 12px;
+  text-align: center;
+}
+
+.footer .wrapper a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer .wrapper a:hover {
+  color: #c00;
+  text-decoration: underline;
+}
+
+.footer .wrapper a img {
+  width: 70px;
+  height: 26px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.img1 {
+  border: 1px solid #ccc;
 }
 /*# sourceMappingURL=registor.css.map */
