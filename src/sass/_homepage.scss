@@ -1,0 +1,90 @@
+.homepage {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  left: 0;
+  box-shadow: 0 0 5px 0 #646464;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #666;
+  line-height: 40px;
+  display: none;
+  .top_wrapper {
+    background: #fff; 
+  }
+  .top {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .top_left {
+    height: 40px;
+    a {
+      &:nth-of-type(1) {
+        font-weight: 700;
+        color: #e60044;
+      }
+      margin-right: 20px;
+      color: #666;
+      line-height: 40px;
+      font-size: 14px;
+      &:hover {
+        color: #ec1611;
+      }
+    }
+  }
+  .top_right {
+    height: 19px;
+    line-height: 30px;
+    font-size: 0;
+    margin-top: 5px;
+    input {
+      width: 113px;
+      padding: 0 0 0 10px;
+      background: #fff;
+      height: 27px;
+      line-height: 28px;
+      border: 1px solid #e60044;
+      float: left;
+      color: #999;
+      vertical-align: middle;
+      &:nth-of-type(2) {
+        width: 82px;
+        height: 29px;
+        border: 0;
+        cursor: pointer;
+        background: url(//status.tuanimg.com/statics/zhe/common/img/index-common.png) -189px
+          0 no-repeat;
+        margin: 0 0 1px -1px;
+      }
+    }
+  }
+
+  .bottom_wrapper {
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    border-top: #ff404c 2px solid;
+    border-bottom: 1px solid #fff;
+    overflow: hidden;
+  }
+  .bottom {
+    border-top: 0;
+    background-color: #fff;
+    width: 1200px;
+    margin: 0 auto;
+    a {
+      margin-right: 18px;
+      float: left;
+      color: #666;
+      font-size: 14px;
+      &:nth-of-type(1) {
+        color: #e60044;
+        font-weight: 700;
+      }
+      &:hover{
+          color: #ec1611;
+      }
+    }
+  }
+}

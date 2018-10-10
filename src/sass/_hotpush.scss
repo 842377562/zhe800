@@ -20,8 +20,15 @@
     li{
         float: left;
         margin-right: 10px;
+        a{overflow: hidden;}
         &:nth-of-type(5){
             margin-right: 0px;
+        }
+        img{
+            transition: all 0.8s;
+            &:hover{
+                box-shadow: 0 0 30px 1px #999;
+            }
         }
     }
 }

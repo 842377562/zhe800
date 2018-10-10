@@ -39,9 +39,11 @@
 
 .flashsale_content {
   position: relative;
+  overflow: hidden;
 
   ul {
     width: 33901px;
+    overflow: hidden;
   }
 
   li:hover {

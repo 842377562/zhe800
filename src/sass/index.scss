@@ -1,4 +1,7 @@
 $size_s:12px;
+html,body{
+width: 100%;
+}
 
 
 @import 'header';
@@ -10,3 +13,4 @@ $size_s:12px;
 @import 'hotpush';
 @import 'update';
 @import 'right_box';
+@import 'homepage';
