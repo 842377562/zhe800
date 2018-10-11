@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header_toolbar {
   background: #fafafa;
 }
@@ -318,6 +319,19 @@ body {
   line-height: 58px;
 }
 
+.detail_left ul li a {
+  width: 58px;
+  height: 58px;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.detail_left ul li img {
+  opacity: 0.5;
+  height: 58px;
+  width: 58px;
+}
+
 .bot {
   width: 400px;
   float: left;
@@ -591,5 +605,214 @@ body {
 .content_top h3 {
   color: #e99494;
   font: 12px/20px "\5FAE\8F6F\96C5\9ED1";
+}
+
+.content {
+  width: 512px;
+  float: left;
+  margin: 11px 0 0;
+  position: relative;
+}
+
+.content a {
+  background: #ff6767;
+  height: 32px;
+  margin: 0 -18px;
+  font: 12px/32px "\5B8B\4F53";
+  color: #fff;
+  padding: 0 18px;
+  display: block;
+  text-decoration: none;
+}
+
+.content a span {
+  font: 14px/30px "\5FAE\8F6F\96C5\9ED1";
+}
+
+.content a b {
+  margin: 0 12px;
+  font-weight: 700;
+}
+
+.content dl {
+  background: #fff6eb;
+  padding: 12px 18px 9px;
+  margin: 0 -18px 10px -18px;
+  display: block;
+  float: left;
+  line-height: 26px;
+}
+
+.content dd {
+  float: left;
+  display: block;
+  line-height: 26px;
+}
+
+.content dd strong {
+  color: #ec1611;
+  font: 700 16px/30px "\5FAE\8F6F\96C5\9ED1";
+  display: inline-block;
+}
+
+.content dd strong i {
+  font-size: 26px;
+  margin-left: 3px;
+}
+
+.content dd del {
+  text-decoration: none;
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+  vertical-align: 2px;
+  color: #666;
+  font: 12px "微软雅黑";
+}
+
+.content dd del em {
+  font-family: "\5B8B\4F53";
+}
+
+.phone_buy {
+  color: #333;
+  position: relative;
+  z-index: 99;
+  display: inline-block;
+  vertical-align: 2px;
+}
+
+.phone_buy a {
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #666;
+  background: #fff6eb !important;
+  margin-left: 5px;
+}
+
+.phone_buy a:hover .codeimg {
+  display: block;
+}
+
+.phone_buy a i {
+  width: 11px;
+  height: 16px;
+  background: url(//i4.tuanimg.com/shop/asset/item_d/p_Spirit1-3.95484520.png) no-repeat -89px -284px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: -2px 4px 0 0;
+}
+
+.phone_buy a label {
+  line-height: 40px;
+}
+
+.phone_buy img {
+  display: none;
+  position: absolute;
+  left: 25px;
+  top: 42px;
+  border: 1px solid #e4e4e4;
+  border-bottom: 0;
+  padding: 4px;
+  background: #fff;
+  vertical-align: middle;
+  width: 132px;
+  height: 132px;
+}
+
+.num {
+  position: absolute;
+  top: 130px;
+  background: #fff;
+}
+
+.num dl {
+  background: #fff;
+}
+
+.num dt {
+  width: 46px;
+  height: 18px;
+  line-height: 18px;
+  color: #fff;
+  text-align: center;
+  padding-right: 3px;
+  background: url(//i4.tuanimg.com/shop/asset/item_d/products/new1.ccb9914b.png) no-repeat 0 0;
+  margin: 3px 8px 0 0;
+  float: left;
+}
+
+.num dd {
+  width: 454px;
+  float: left;
+}
+
+.num dd p {
+  border: 1px solid #ccc;
+  float: left;
+  margin-right: 10px;
+  background: #fff;
+}
+
+.num dd i {
+  width: 26px;
+  height: 28px;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  font: 700 18px/26px "\5FAE\8F6F\96C5\9ED1";
+  background: url(//i4.tuanimg.com/shop/asset/item_d/products/p_Spirit6.b652a725.png) no-repeat 1px -179px;
+}
+
+.num dd input {
+  float: left;
+  border-width: 0 1px;
+  font-family: arial;
+  border-color: #ccc;
+  border-style: solid;
+  width: 38px;
+  height: 18px;
+  background: #fff;
+  padding: 5px;
+  text-align: center;
+}
+
+.num dd .left_but {
+  background-position: -1px -179px;
+}
+
+.num dd .right_but {
+  background-position: -1px -240px;
+}
+
+.submit {
+  position: absolute;
+  top: 220px;
+  margin-top: 13px;
+  width: 100%;
+  float: left;
+}
+
+.submit span {
+  margin-right: 20px;
+}
+
+.submit input {
+  width: 160px;
+  height: 55px;
+  color: #fff;
+  text-align: center;
+  font: 20px/36px "\5FAE\8F6F\96C5\9ED1";
+  border: 1px solid #ec1611;
+  cursor: pointer;
+}
+
+.submit .buy input {
+  background: #fff;
+  color: #ec1611;
+}
+
+.submit .cart input {
+  background: #ec1611;
 }
 /*# sourceMappingURL=details.css.map */

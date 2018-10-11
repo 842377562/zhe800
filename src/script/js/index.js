@@ -102,31 +102,97 @@ define(["jquery"], function($) {
     // },100),
 
     getdata: !(function() {
-      // $.ajax({
       //   url: "http://10.31.162.23/work/zhe800/php/index_data.php",
-      //   dataType:'json'
-      // }).done(function(data) {
-      //   console.log(data);
-      //   var $strhtml = "";
-      //   $.each(data, function(index, value) {
-      //index:索引      value:索引对应的值.
-
-      $.getJSON("http://10.31.162.23/work/zhe800/php/index_data.php", function(
-        data
-      ) {
-        $strhtml += `<div>
+      $.ajax({
+        url: "http://10.31.162.23/work/zhe800/php/index_data.php",
+        dataType: "json"
+      }).done(function(data) {
+        var $str = "";
+        $.each(data, function(index, value) {
+          $str += `<div>
 					<a href="#">
 						<img src="${value.imgurl}" alt="">
 					</a>
 					<span>
 						<a href="#">${value.name}</a>
-					
 					<em>${value.day}</em></span>
 					<b>${value.price}</b>
 					<i>收藏品牌</i>
 				</div>`;
-      
-      $(".update_content").html($strhtml);});
-    })()
+        });
+        $(".update_content").html($str);
+      });
+    })(),
+    //详情页数据
+    tendata: !(function() {
+      $.ajax({
+        url: "http://10.31.162.23/work/zhe800/php/ten_data.php",
+        dataType: "json"
+      }).done(function (data) {
+        var $str = "";
+        $.each(data, function (index, value) {
+          $str += `<li>
+					<a href="details.html?sid=${value.sid}">
+						<div><img src="${value.tu.split(',')[0]}" alt=""></div>
+						<span>￥<em>${value.xianjia}</em></span>
+						<p>${value.idname}</p>
+					</a>
+				</li>`;
+        });
+        $("#btnn").html($str);
+      });
+    })(),
+    // 详情页渲染
+    details: !function () { 
+      $.ajax({
+        url: "http://10.31.162.23/work/zhe800/php/details.php",
+        data: {
+          sid: location.search.substring(1).split('=')[1]
+        },
+        dataType: 'json'
+      }).done(function (data) {
+        $('.img0').attr('src',data[0].tu.split(',')[0]);
+        $('.img1').attr('src',data[0].tu.split(',')[0]);
+        $('.img2').attr('src',data[0].tu.split(',')[1]);
+        $('.img3').attr('src',data[0].tu.split(',')[2]);
+        $('.img4').attr('src',data[0].tu.split(',')[3]);
+        $('.content_top h1').html(data[0].idname);
+        $('.content_top h3').html(data[0].xiaoidname);
+        $('.content strong i').html(data[0].xianjia);
+        $('.content del i').html(data[0].yuanjia);
+        $('.shop h4 a').html(data[0].shopname);
+      })
+    }(),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   };
 });
