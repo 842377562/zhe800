@@ -932,6 +932,7 @@ html, body {
 .flashsale_content ul {
   width: 33901px;
   overflow: hidden;
+  position: relative;
 }
 
 .flashsale_content li:hover {
@@ -996,9 +997,17 @@ html, body {
   left: 0;
 }
 
+.flashsale_content .btnleft:hover {
+  background-position: -217px -440px;
+}
+
 .flashsale_content .btnright {
   background-position: -307px -440px;
   right: 0;
+}
+
+.flashsale_content .btnright:hover {
+  background-position: -247px -440px;
 }
 
 #hotpush {

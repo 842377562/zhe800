@@ -77,13 +77,56 @@ define(["jquery"], function($) {
           $(".homepage").hide();
         }
       });
-      })(),
+    })(),
     //限时秒杀幻灯片
-      flashsale: !function () { 
-        
-          
-      }(),
+    flashsale: !(function() {
+      $(".btnright").on("click", function() {
+        var $x = $("#btnn").position().left;
+        $("#btnn").animate({ left: $x - 1200 - 18 });
+      });
+      $(".btnleft").on("click", function() {
+        var $x = $("#btnn").position().left;
+        $("#btnn").animate({ left: $x + 1200 + 18 });
+      });
+    })(),
+    //回到顶部
+    backtop: setTimeout(function() {
+      $("#box11").on("click", function() {
+        $("body,html").animate({ scrollTop: 0 }, 400);
+      });
+    }, 100),
+    //搜索引擎
+    // se: setTimeout(function () {
+    //   $('.header_input ._input')
 
-    //$.get('http://10.31.162.23/work/zhe800/php/index_data.php')
+    // },100),
+
+    getdata: !(function() {
+      // $.ajax({
+      //   url: "http://10.31.162.23/work/zhe800/php/index_data.php",
+      //   dataType:'json'
+      // }).done(function(data) {
+      //   console.log(data);
+      //   var $strhtml = "";
+      //   $.each(data, function(index, value) {
+      //index:索引      value:索引对应的值.
+
+      $.getJSON("http://10.31.162.23/work/zhe800/php/index_data.php", function(
+        data
+      ) {
+        $strhtml += `<div>
+					<a href="#">
+						<img src="${value.imgurl}" alt="">
+					</a>
+					<span>
+						<a href="#">${value.name}</a>
+					
+					<em>${value.day}</em></span>
+					<b>${value.price}</b>
+					<i>收藏品牌</i>
+				</div>`;
+      
+      $(".update_content").html($strhtml);});
+    })()
   };
 });

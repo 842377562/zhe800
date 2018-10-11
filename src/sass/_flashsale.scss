@@ -44,6 +44,7 @@
   ul {
     width: 33901px;
     overflow: hidden;
+    position: relative;
   }
 
   li:hover {
@@ -85,7 +86,6 @@
       overflow: hidden;
       color: #666;
       margin: 6px 10px 0 10px;
-
     }
   }
 
@@ -103,10 +103,16 @@
   .btnleft {
     background-position: -277px -440px;
     left: 0;
+    &:hover {
+      background-position: -217px -440px;
+    }
   }
 
   .btnright {
     background-position: -307px -440px;
     right: 0;
+    &:hover {
+      background-position: -247px -440px;
+    }
   }
 }
