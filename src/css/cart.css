@@ -1,0 +1,114 @@
+@charset "UTF-8";
+#top_boolbar {
+  width: 100%;
+  background: #fafafa;
+  color: #999;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  z-index: 10001;
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+  padding: 0;
+}
+
+#top_boolbar a {
+  color: #999;
+  text-decoration: none;
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+  line-height: 30px;
+  font-size: 12px;
+}
+
+#top_boolbar a:hover {
+  color: #ec1611;
+}
+
+#top_boolbar .wrapper {
+  position: relative;
+  z-index: 100000;
+  color: #d5d5d5;
+  width: 980px;
+  margin: 0 auto;
+}
+
+#top_boolbar .wrapper .login a {
+  padding: 0 8px 0 2px;
+}
+
+#top_boolbar .wrapper .login span {
+  height: 22px;
+  display: inline-block;
+  position: relative;
+  z-index: 10000;
+}
+
+#top_boolbar .wrapper .login span i {
+  width: 18px;
+  height: 16px;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: -4px;
+  margin-right: 4px;
+  background: url(//i4.tuanimg.com/cart/asset/d/icon/cart2017.36343949.png) 0 0 no-repeat;
+}
+
+#top_boolbar .wrapper .login span b {
+  color: #ec1611;
+  margin-left: 4px;
+  font-weight: 700;
+}
+
+header {
+  border-bottom: 2px solid #ec1611;
+  width: 100%;
+}
+
+header .wrapper {
+  width: 980px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+header .wrapper .logo {
+  overflow: hidden;
+  height: 45px;
+  float: left;
+}
+
+header .wrapper .logo img {
+  width: 218px;
+  height: 45px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+header .wrapper .flow {
+  float: right;
+  background: url(//i4.tuanimg.com/cart/asset/d/step.ff09f3d1.png) 0 0 no-repeat;
+  width: 296px;
+  height: 18px;
+  margin-top: 8px;
+}
+
+header .title {
+  border-bottom: 2px solid #fff;
+  padding: 12px 0;
+  line-height: 26px;
+  text-align: left;
+  margin: 15px 0 2px 0;
+}
+
+header .title p {
+  font: 18px/26px "微软雅黑";
+  margin-right: 20px;
+  color: #333;
+  display: inline;
+}
+
+header .title div {
+  width: 486px;
+  height: 28px;
+  float: right;
+  background: url(//i4.tuanimg.com/cart/asset/d/new_icon1.7d56c951.png) no-repeat;
+}
+/*# sourceMappingURL=cart.css.map */

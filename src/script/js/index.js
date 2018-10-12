@@ -163,7 +163,11 @@ define(["jquery"], function($) {
         $('.shop h4 a').html(data[0].shopname);
       })
     }(),
-
+    //详情页图片切换
+    tabimg: !function () {
+      
+    }(),
+    
 
 
 
