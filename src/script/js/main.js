@@ -1,1 +1,1 @@
-require(['index','registor']);
+require(['index','registor','details']);

@@ -39,16 +39,16 @@ header {
   width: 860px;
   margin: 0 auto;
 
-  label {
-    margin-left: -74px;
-    text-align: right;
-    float: left;
-    width: 74px;
-    height: 36px;
-    font: 14px/36px "宋体";
-    display: inline;
-    color: #333;
-  }
+  // label {
+  //   margin-left: -74px;
+  //   text-align: right;
+  //   float: left;
+  //   width: 74px;
+  //   height: 36px;
+  //   font: 14px/36px "宋体";
+  //   display: inline;
+  //   color: #333;
+  // }
 }
 
 .reg_left {
@@ -123,37 +123,7 @@ header {
     }
   }
 }
-.red_submit {
-  padding: 15px 0 15px 74px;
-  position: relative;
-  width: 356px;
-  a {
-    border-top: 1px solid #e93a3a;
-    border-bottom: 1px solid #e93a3a;
-    display: inline-block;
-    text-align: center;
-    margin-top: 1px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 12px;
-  }
-  i {
-    font-size: 14px;
-    border-left: 1px solid #e93a3a;
-    border-right: 1px solid #e93a3a;
-    margin: 0 -1px;
-    display: block;
-    font-style: normal;
-    color: #fff;
-    background: #ff3b37;
-    text-decoration: none;
-    height: 30px;
-    line-height: 30px;
-    position: relative;
-    text-align: center;
-    width: 178px;
-  }
-}
+
 .reg_right {
   width: 430px;
   h3 {
@@ -260,4 +230,72 @@ header {
 }
 .img1{
     border: 1px solid #ccc;
+}
+
+
+#form1{
+  input{
+    width: 290px;
+    height: 30px;
+    text-indent: 5px;
+    border: 1px solid #d2d2d2;
+    padding: 2px 3px;
+    line-height: 30px;
+    vertical-align: middle;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  .fwidth{
+    margin-left: -74px;
+    text-align: right;
+    width: 74px;
+    height: 36px;
+    font: 14px/36px "宋体";
+    display: inline;
+    color: #333;
+    float:left;
+  }
+  .error{
+    display: block;
+    font-size: 12px;
+    margin-top:15px;
+    color: #333;
+  }
+  p{
+    padding: 15px 0 15px 74px;
+    position: relative;
+    width: 356px;
+    zoom: 1;
+    display: block;
+  }
+}
+.red_submit {
+  padding: 15px 0 15px 74px;
+  position: relative;
+  
+    border-top: 1px solid #e93a3a;
+    border-bottom: 1px solid #e93a3a;
+    display: inline-block;
+    text-align: center;
+    margin-top: 1px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 12px;
+  
+  
+    font-size: 14px;
+    border-left: 1px solid #e93a3a;
+    border-right: 1px solid #e93a3a;
+    margin: 0 -1px;
+    display: block;
+    font-style: normal;
+    color: #fff;
+    background: #ff3b37;
+    text-decoration: none;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    text-align: center;
+    width: 178px !important;
+ 
 }

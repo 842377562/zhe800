@@ -815,4 +815,12 @@ body {
 .submit .cart input {
   background: #ec1611;
 }
+
+.tabli {
+  border: 1px solid #ec1611 !important;
+}
+
+.tabli img {
+  opacity: 1 !important;
+}
 /*# sourceMappingURL=details.css.map */

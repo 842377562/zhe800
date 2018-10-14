@@ -20,7 +20,7 @@
     </header>
     <div class="register clear">
         <div class="reg_left left">
-            <div class="phone inp">
+            <!-- <div class="phone inp">
                 <label for="">手机号：</label>
                 <input type="text"
                        value="手机号码">
@@ -33,25 +33,66 @@
                 <label for="">确认密码：</label>
                 <input type="password">
             </div>
-            <!-- <div class="slide"></div> -->
+             <div class="slide"></div> 
             <div class="code inp">
                 <label for="">验证码：</label>
                 <input type="text"
                        name=""
                        id="oninp">
                 <a href="javascript:;">免费获取手机验证码</a>
-            </div>
+            </div> -->
+            <form action="reg.php"
+                  method="post"
+                  id="form1">
+                <p>
+                    <label class="fwidth"
+                           for="username">用户名：</label>
+                    <input type="text"
+                           name="username"
+                           id="username" />
+                    <!--<span>(必填，3-15字符长度，支持汉字、字母、数字及_)</span>-->
+                    <label id="username-error"
+                           class="error"
+                           for="username">(必填，3-15字符长度，支持汉字、字母、数字及_)</label>
+                </p>
+                <p>
+                    <label class="fwidth"
+                           for="password">密码：</label>
+                    <input type="password"
+                           name="password"
+                           id="password" />
+                    <label id="password-error"
+                           class="error"
+                           for="password">(必填，不得少于6位)</label>
+                </p>
+                <p>
+                    <label class="fwidth"
+                           for="repass">密码重复：</label>
+                    <input type="password"
+                           name="repass"
+                           id="repass" />
+                    <label id="repass-error"
+                           class="error"
+                           for="repass">(必填，不得少于6位)</label>
+                </p>
+                <p>
+                    <input type="submit"
+                           value="注册"
+                           name="submit"
+                           class="red_submit" />
+                </p>
+            </form>
             <div class="code_txt"></div>
             <div class="agree">
                 <p><input type="checkbox"
                            checked="checked"> 我已阅读并接受折800的<a href="#">《用户服务协议》</a>
                 </p>
             </div>
-            <div class="red_submit">
+            <!-- <div class="red_submit">
                 <a href="#">
                     <i>同意协议并注册</i>
                 </a>
-            </div>
+            </div> -->
         </div>
         <div class="reg_right right">
             <div class="top"></div>
@@ -77,19 +118,86 @@
     </div>
     <div class="footer">
         <div class="wrapper">
-            <a href="#">京ICP证120075号</a> 京ICP备10051110号-5 
-            <a href="#">京公网安备11010502025623</a> 食品流通许可证SP1101051510352397 
-            Copyright©2011-2018 版权所有 ZHE800.COM 
+            <a href="#">京ICP证120075号</a> 京ICP备10051110号-5
+            <a href="#">京公网安备11010502025623</a> 食品流通许可证SP1101051510352397
+            Copyright©2011-2018 版权所有 ZHE800.COM
             <br>
-            <a href="#"><img class="img1" src="//i0.tuanimg.com/pp/v2/img/web_trust.png" alt=""></a>
-            <a href="#"><img src="https://i0.tuanimg.com/zhe/img/cert.png" alt=""></a>
+            <a href="#">
+                <img class="img1"
+                     src="//i0.tuanimg.com/pp/v2/img/web_trust.png"
+                     alt="">
+            </a>
+            <a href="#"><img src="https://i0.tuanimg.com/zhe/img/cert.png"
+                     alt=""></a>
 
-            <a href="#"><img src="//i0.tuanimg.com/zhe/img/credit.png" alt=""></a>
+            <a href="#"><img src="//i0.tuanimg.com/zhe/img/credit.png"
+                     alt=""></a>
 
         </div>
     </div>
 
-    <script src="script/js/require.js" type="text/javascript" defer async="true" data-main="script/js/main.js"></script>
+    <script src="script/js/require.js"
+            type="text/javascript"
+            defer
+            async="true"
+            data-main="script/js/main.js">
+    </script>
+    <script src="script/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="script/js/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        //表单验证-用户名
+        $(function(){
+            $('#form1').validate({
+                rules:{
+                    username:{
+                        required:true,
+                        minlength:2,
+                        maxlength:10,
+                        remote: {
+                            url: "http://10.31.162.23/work/zhe800/php/reg.php",     //后台处理程序
+                            type: "post",               //数据发送方式
+                            data: {                     //要传递的数据
+                                name: function() {
+                                    return $("#username").val();
+                                }
+                            }
+                        }
+                    },
+                    password:{
+                        required:true,
+                        minlength:6
+                    },
+                    repass:{
+                        required:true,
+                        equalTo:'#password'
+                    }
+                },
+                messages:{
+                    username:{
+                        required:'用户名不能为空',
+                        minlength:'用户名不能小于2',
+                        maxlength:'用户名不能大于10',
+                        remote:'用户名已存在' 
+                    },
+                    password:{
+                        required:'密码不能为空'
+                    },
+                    repass:{
+                        required:'密码重复不能为空'
+                    }
+                }
+                
+            });
+        });
+        
+        $.validator.setDefaults({
+            /*添加校验成功后的执行函数--修改提示内容，并为正确提示信息添加新的样式(默认是valid)*/
+            success: function(label){
+                label.text('√').css('color','green').addClass('valid');
+            }
+        });
+    </script>
+
 </body>
 
 </html>
